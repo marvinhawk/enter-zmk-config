@@ -1,0 +1,6 @@
+if SHIELD_ENTER
+
+config ZMK_KEYBOARD_NAME
+	default "ENTER"
+
+endif
