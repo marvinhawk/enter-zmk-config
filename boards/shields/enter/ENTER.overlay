@@ -1,12 +1,14 @@
 / {
 	chosen {
-		zmk,kscan = &default_kscan;
-	};
-
-	default_kscan: kscan {
-		compatible = "zmk,kscan-gpio-direct";
-		label = "default_kscan";
-
+       		zmk,kscan = &kscan0;
+        	// zmk,physical-layout = &physical_layout0;
+        	// Other chosen items
+    	};
+	
+	kscan0: kscan0 {
+        	compatible = "zmk,kscan-gpio-direct";
+        	wakeup-source;
+	
 		input-gpios =
 			<&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
 			<&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
