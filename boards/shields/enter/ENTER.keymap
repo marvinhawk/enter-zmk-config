@@ -8,9 +8,9 @@
 
         default_layer {
             bindings = <
-                &kp X
-                &kp Z
-		&kp ENTER
+                &kp BACKSPACE 
+                &kp ENTER
+		&kp LC(LA(L)) 
             >;
         };
     };
